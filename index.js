@@ -1,7 +1,7 @@
 function Point(x,y){
   this.x = x
   this.y = y
-  function toString(){
+  var toString = () => {
     return `(${x}, ${y})`
   }
   }

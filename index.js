@@ -25,11 +25,11 @@ function Side(sides){
 function Circle(radius) {
   Shape.call(this)
   this.radius = radius
-  this.diameter = 2*this.radius
 }
 
 Circle.prototype = Object.create(Shape.prototype)
 Circle.prototype.constructor = Circle
+Circle.prototype.diameter = this.radius*2
 Circle.prototype.area = function(){
   return Math.Pi*(this.radius * this.radius)
 }

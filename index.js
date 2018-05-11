@@ -22,7 +22,7 @@ function Side(sides){
   this.length = sides
 }
 
-function Circle(radius){
+function Circle(radius) {
   Shape.call(this)
   this.radius = radius
 }

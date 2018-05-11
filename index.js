@@ -90,3 +90,14 @@ function Square(length){
   Rectangle.call(this, length, length)
   this.length = length
 }
+
+Square.protoype = Object.create(Rectangle.prototype)
+Square.protoype.constructor = Square
+Square.prototype.listProperties = function(){
+  for (var prop in this){
+    string = ''
+    if(this.hasOwnProperty(prop)){
+      string+=prop + ' '
+    }
+  }
+}

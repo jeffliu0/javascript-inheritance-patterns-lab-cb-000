@@ -25,6 +25,7 @@ function Side(sides){
 function Circle(radius) {
   Shape.call(this)
   this.radius = radius
+  this.diameter = this.radius*2
 }
 
 Circle.prototype = Object.create(Shape.prototype)

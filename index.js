@@ -67,7 +67,7 @@ function Quadrilateral(sideOneLength, sideTwoLength, sideThreeLength, sideFourLe
   this.sideTwoLength = sideTwoLength;
   this.sideThreeLength = sideThreeLength;
   this.sideFourLength = sideFourLength;
-  this.length = 4
+  //this.length = 4
 }
 
 //inherit from Shape prototype

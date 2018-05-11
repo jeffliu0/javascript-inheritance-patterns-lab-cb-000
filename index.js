@@ -8,6 +8,9 @@ function Shape() {
   }
 }
 
+function Side(sides){
+  this.sides = sides
+}
 function Point(x,y) {
   this.x = x
   this.y = y

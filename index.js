@@ -10,6 +10,10 @@ Point.prototype.toString = (x,y)=>{
 
 function Shape() {}
 
+Shape.prototype.addToPlane = (x,y)=>{
+  this.position = Point(this,x,y)
+}
+
 function Side(sides){
   this.length = sides
 }

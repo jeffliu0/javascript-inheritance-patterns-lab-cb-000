@@ -44,7 +44,7 @@ function Polygon(sides){
 Polygon.prototype = Object.create(Shape.prototype)
 Polygon.prototype.constructor = Polygon
 
-Polygon.prototype.numberOfSides() = function(){
+Polygon.prototype.numberOfSides = function(){
   return this.sides.length
 }
 

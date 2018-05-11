@@ -1,6 +1,5 @@
 function Shape() {
-  
-  this.addToPlane = function(x,y){
+  function addToPlane(x,y){
     this.position = Point.call(this,x,y)
   }
 

@@ -62,7 +62,7 @@ Polygon.prototype.perimeter = function(){
 
 function Quadrilateral(sideOneLength, sideTwoLength, sideThreeLength, sideFourLength) {
   // call Shape constructor
-  Polygon.call(4);
+  Polygon.call(this,4);
   this.sideOneLength = sideOneLength;
   this.sideTwoLength = sideTwoLength;
   this.sideThreeLength = sideThreeLength;

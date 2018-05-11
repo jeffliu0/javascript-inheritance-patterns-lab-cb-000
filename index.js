@@ -21,6 +21,6 @@ function Shape(){
 function Circle(radius){
   Shape.call()
   this.radius = radius
-  this.area = ()={ return 3.14*(this.radius * this.radius)}
+  this.area = ()=> { return 3.14*(this.radius * this.radius)}
   this.circumference = () { return 2*3.14*this.radius}
 }

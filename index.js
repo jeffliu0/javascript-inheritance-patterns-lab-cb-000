@@ -30,13 +30,13 @@ function Circle(radius) {
 Circle.prototype = Object.create(Shape.prototype)
 Circle.prototype.constructor = Circle
 Circle.prototype.diameter = function(){
-  return this.radius*@
+  return this.radius*2
 }
 Circle.prototype.area = function(){
   return Math.Pi*(this.radius * this.radius)
 }
 Circle.prototype.circumference = function(){
-  return Math.Pi*this.diameter
+  return Math.Pi*this.radius*2
 }
 
 function Polygon(sides){

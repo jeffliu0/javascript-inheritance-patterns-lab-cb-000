@@ -36,7 +36,7 @@ Circle.prototype.area = function(){
   return Math.Pi*(this.radius * this.radius)
 }
 Circle.prototype.circumference = function(){
-  return Math.Pi*this.diameter()
+  return Math.Pi*diameter()
 }
 
 function Polygon(sides){

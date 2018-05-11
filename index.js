@@ -15,4 +15,8 @@ function Shape(){
     this.x = x
     this.y = y
   }
+
+  this.position = function(){
+    return(this.x + ", " + this.y); 
+  }
 }

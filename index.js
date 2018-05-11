@@ -18,7 +18,7 @@ function Point(x,y) {
   this.toString = () => {
     return `(${x}, ${y})`
   }
-  }
+}
 
 function Circle(radius){
   Shape.call(this)

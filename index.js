@@ -77,11 +77,11 @@ Quadrilateral.prototype.constructor = Quadrilateral;
 function Rectangle(width, height){
   Quadrilateral.call(this, width, width, height, height)
   this.width = width
-  this.height = length
+  this.height = height
 }
 
 Rectangle.prototype = Object.create(Quadrilateral.prototype)
 Rectangle.prototype.constructor = Rectangle
 Rectangle.prototype.area = function(){
-  return this.width * this.length
+  return this.width * this.height
 }

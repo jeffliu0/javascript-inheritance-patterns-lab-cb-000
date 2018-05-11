@@ -11,7 +11,7 @@ Point.prototype.toString = function(){
 function Shape() {}
 
 Shape.prototype.addToPlane = function(x,y){
-  this.position = Point.call(x,y)
+  this.position = new Point(x,y)
 }
 
 Shape.prototype.move = function(x,y){

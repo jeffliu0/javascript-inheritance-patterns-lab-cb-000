@@ -59,3 +59,21 @@ Polygon.prototype.perimeter = function(){
   }
   return p
 }
+
+function Quadrilateral(sideOneLength, sideTwoLength, sideThreeLength, sideFourLength) {
+  // call Shape constructor
+  Shape.call(this);
+  this.sideOneLength = sideOneLength;
+  this.sideTwoLength = sideTwoLength;
+  this.sideThreeLength = sideThreeLength;
+  this.sideFourLength = sideFourLength;
+}
+
+//inherit from Shape prototype
+Quadrilateral.prototype = Object.create(Shape.prototype);
+Quadrilateral.prototype.constructor = Quadrilateral;
+
+//extend Quadrilateral
+Quadrilateral.prototype.perimeter = function() {
+  return this.sideOneLength + this.sideTwoLength + this.sideThreeLength + this.sideFourLength;
+}

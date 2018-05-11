@@ -91,7 +91,7 @@ function Square(length){
   this.length = length
 }
 
-Square.protoype = Object.create(Rectangle.prototype)
+Square.prototype = Object.create(Rectangle.prototype)
 Square.protoype.constructor = Square
 Square.prototype.listProperties = function(){
   for (var prop in this){

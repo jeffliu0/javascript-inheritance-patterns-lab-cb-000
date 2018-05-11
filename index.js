@@ -51,7 +51,7 @@ Polygon.prototype.numberOfSides() = function(){
 Polygon.prototype.perimeter = function(){
 
   var p = 0
-  for(int i = 0; i < this.numberOfSides(); i++){
+  for(var i = 0; i < this.numberOfSides(); i++){
     p += this.sides[i].length
   }
   return p

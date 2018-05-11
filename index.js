@@ -99,7 +99,7 @@ Triangle.prototype = Object.create(Polygon.prototype);
 Triangle.prototype.constructor = Triangle;
 
 Square.prototype = Object.create(Rectangle.prototype)
-Square.protoype.constructor = Square
+Square.prototype.constructor = Square
 Square.prototype.listProperties = function(){
   for (var prop in this){
     string = ''

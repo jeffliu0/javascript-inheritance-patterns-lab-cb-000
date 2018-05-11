@@ -4,7 +4,7 @@ function Point(x,y) {
 }
 
 Point.prototype.toString = (x,y){
-  return("(" + this.x + "," + this.y + ")");
+  return(`${x}, ${y}`)
 }
 
 

@@ -91,6 +91,13 @@ function Square(length){
   this.length = length
 }
 
+function Triangle(sideOneLength, sideTwoLength, sideThreeLength) {
+  Polygon.call(this, [new Side(sideOneLength), new Side(sideTwoLength), new Side(sideThreeLength)])
+}
+
+Triangle.prototype = Object.create(Polygon.prototype);
+Triangle.prototype.constructor = Triangle;
+
 Square.prototype = Object.create(Rectangle.prototype)
 Square.protoype.constructor = Square
 Square.prototype.listProperties = function(){

@@ -9,9 +9,9 @@ function Point(x,y){
 function Shape(){
 
   this.addToPlane = (x,y) => {
-    return "hi"
+    this.position = Point.call(this,x,y)
   }
-
+  
   this.move = (x,y)=>{
     this.x = x
     this.y = y

@@ -70,7 +70,7 @@ function Quadrilateral(sideOneLength, sideTwoLength, sideThreeLength, sideFourLe
 }
 
 //inherit from Shape prototype
-Quadrilateral.prototype = Object.create(Shape.prototype);
+Quadrilateral.prototype = Object.create(Polygon.prototype);
 Quadrilateral.prototype.constructor = Quadrilateral;
 
 //extend Quadrilateral

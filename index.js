@@ -33,5 +33,5 @@ Circle.prototype.area = function(){
   return 3.14*(this.radius * this.radius)
 }
 Circle.prototype.perimeter = function(){
-  return 3.14*2*this.radius)
+  return 3.14*2*this.radius
 }

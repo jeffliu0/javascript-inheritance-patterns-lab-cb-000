@@ -1,4 +1,4 @@
-function Point(x,y){
+function Point(x,y) {
   this.x = x
   this.y = y
   this.toString = () => {
@@ -6,7 +6,7 @@ function Point(x,y){
   }
   }
 
-function Shape(){
+function Shape() {
   this.addToPlane = function(x,y){
     this.position = Point.prototype.call(this,x,y)
   }

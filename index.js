@@ -10,7 +10,7 @@ Point.prototype.toString = function(){
 
 function Shape() {}
 
-Shape.prototype.addToPlane = (x,y)=>{
+Shape.prototype.addToPlane = function(x,y){
   this.position = Point(this,x,y)
 }
 

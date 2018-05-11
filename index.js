@@ -5,3 +5,10 @@ function Point(x,y){
     return `(${x}, ${y})`
   }
   }
+
+function Shape(){
+  Point.call(x,y)
+  this.addToPlane = (x,y)=>{
+
+  }
+}

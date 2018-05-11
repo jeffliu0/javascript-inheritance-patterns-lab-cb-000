@@ -77,7 +77,7 @@ Quadrilateral.prototype.constructor = Quadrilateral;
 function Rectangle(width, height){
   Quadrilateral.call(this, width, width, height, height)
   this.width = width
-  this.length = length
+  this.height = length
 }
 
 Rectangle.prototype = Object.create(Quadrilateral.prototype)

@@ -4,7 +4,7 @@ function Point(x,y) {
 }
 
 Point.prototype.toString = ()=>{
-  return(`${x}, ${y}`)
+  return(`${this.x}, ${this.y}`)
 }
 
 

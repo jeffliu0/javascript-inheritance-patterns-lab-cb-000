@@ -3,9 +3,8 @@ function Point(x,y) {
   this.y = y
 }
 
-Point.prototype.toString = function() {
-  return(`(${this.x}, ${this.y})`)
-}
+Point.prototype.toString = () => return(`(${this.x}, ${this.y})`)
+
 
 
 function Shape() {}

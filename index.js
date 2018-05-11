@@ -35,3 +35,19 @@ Circle.prototype.area = function(){
 Circle.prototype.circumference = function(){
   return Math.Pi*2*this.radius
 }
+
+function Polygon(sides){
+  Shape.call(this)
+  this.sides = sides
+}
+
+Polygon.prototype = Object.create(Shape.prototype)
+Polygon.prototype.constructor = Polygon
+Polygon.prototype.numberOfSides() = function(){
+  return this.sides
+}
+Polygon.prototype.perimeter = function(){
+  for(int i = 0; i < this.sides; i++){
+
+  }
+}

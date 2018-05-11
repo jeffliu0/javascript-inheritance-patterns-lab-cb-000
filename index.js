@@ -102,7 +102,7 @@ Square.prototype = Object.create(Rectangle.prototype)
 Square.prototype.constructor = Square
 Square.prototype.listProperties = function(){
   for (var prop in this){
-    string = ''
+    var string = ''
     if(this.hasOwnProperty(prop)){
       string=string + prop + ' '
     }

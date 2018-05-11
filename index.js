@@ -104,7 +104,7 @@ Square.prototype.listProperties = function(){
   for (var prop in this){
     string = ''
     if(this.hasOwnProperty(prop)){
-      string+=prop + ' '
+      string=string + prop + ' '
     }
   }
 }

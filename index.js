@@ -8,7 +8,7 @@ function Point(x,y) {
 
 function Shape() {
   this.addToPlane = function(x,y){
-    this.position = Point.prototype.call(this,x,y)
+    this.position = Point.call(this,x,y)
   }
   this.move = (x,y)=>{
     this.x = x

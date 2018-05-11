@@ -1,3 +1,13 @@
+function Point(x,y) {
+  this.x = x
+  this.y = y
+}
+
+Point.prototype.toString = (x,y){
+  return("(" + this.x + "," + this.y + ")");
+}
+
+
 function Shape() {
   this.addToPlane = (x,y) => {
     this.position = Point.call(this,x,y)
@@ -10,14 +20,6 @@ function Shape() {
 
 function Side(sides){
   this.length = sides
-}
-
-function Point(x,y) {
-  this.x = x
-  this.y = y
-  this.toString = () => {
-    return `(${x}, ${y})`
-  }
 }
 
 function Circle(radius){

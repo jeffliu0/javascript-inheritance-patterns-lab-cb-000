@@ -3,7 +3,7 @@ function Point(x,y) {
   this.y = y
 }
 
-Point.prototype.toString = (x,y){
+Point.prototype.toString = (x,y)=>{
   return(`${x}, ${y}`)
 }
 

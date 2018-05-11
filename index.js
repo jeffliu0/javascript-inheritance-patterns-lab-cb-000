@@ -73,3 +73,13 @@ function Quadrilateral(sideOneLength, sideTwoLength, sideThreeLength, sideFourLe
 //inherit from Shape prototype
 Quadrilateral.prototype = Object.create(Polygon.prototype);
 Quadrilateral.prototype.constructor = Quadrilateral;
+
+function Rectangle(width, length){
+  Quadrilateral.call(this, width, width, length, length)
+}
+
+Rectangle.prototype = Object.create(Quadrilateral.prototype)
+Rectangle.prototype.constructor = Rectangle
+Rectangle.prototype.area = function(){
+  return this.width * this.length
+}

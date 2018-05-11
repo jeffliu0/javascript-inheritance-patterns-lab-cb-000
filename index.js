@@ -7,7 +7,7 @@ function Point(x,y){
   }
 
 function Shape(){
-  this.addToPlane = (x,y)=>{
+  this.addToPlane = (x,y) => {
     Point.call(this,x,y)
   }
 
@@ -17,6 +17,6 @@ function Shape(){
   }
 
   this.position = function(){
-    return(this.x + ", " + this.y); 
+    return(this.x + ", " + this.y)
   }
 }

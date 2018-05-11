@@ -8,15 +8,7 @@ Point.prototype.toString = (x,y)=>{
 }
 
 
-function Shape() {
-  this.addToPlane = (x,y) => {
-    this.position = Point.call(this,x,y)
-  }
-  this.move = (x,y)=>{
-    this.x = x
-    this.y = y
-  }
-}
+function Shape() {}
 
 function Side(sides){
   this.length = sides

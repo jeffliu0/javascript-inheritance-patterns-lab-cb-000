@@ -43,10 +43,13 @@ function Polygon(sides){
 
 Polygon.prototype = Object.create(Shape.prototype)
 Polygon.prototype.constructor = Polygon
+
 Polygon.prototype.numberOfSides() = function(){
-  return this.sides
+  return this.sides.length
 }
+
 Polygon.prototype.perimeter = function(){
+
   var p = 0
   for(int i = 0; i < this.numberOfSides(); i++){
     p += this.sides[i].length

@@ -17,7 +17,7 @@ function Point(x,y) {
   }
 
 function Circle(radius){
-  Shape.prototype.call()
+  Shape.call(this)
   this.radius = radius
   this.area = () => { return 3.14*(this.radius * this.radius)}
   this.circumference = () => { return 2*3.14*this.radius}
